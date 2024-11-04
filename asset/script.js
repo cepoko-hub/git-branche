@@ -22,7 +22,7 @@ async function handleAuth() {
                     alert("Erreur de mot de passe.");
                 }
             } else {
-                const createAccount = confirm("Le pseudo n'existe pas. Voulez-vous créer un compte ?");
+                const createAccount = confirm("Le pseudo n'existe pas. Voulez-vous créer un compte temporaire ?");
                 if (createAccount) {
                     await addUser(pseudo, password);
                     alert("Compte créé et connecté !");
